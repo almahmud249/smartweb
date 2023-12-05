@@ -1,8 +1,6 @@
 <?php
 
-use App\Http\Controllers\auth\LoginController;
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\OrderController;
+use App\Http\Controllers\BulkImportController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,12 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('/login', [LoginController::class, 'login'])->name('login');
-Route::middleware(['guest'])->group(function () {
-    Route::get('/login', [LoginController::class, 'create'])->name('login.create');
-});
-Route::middleware(['auth.check'])->group(function () {
-    Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
-    Route::get('/', [DashboardController::class, 'index']);
-    Route::get('orders/{tab}', [OrderController::class, 'index'])->name('order.index');
-});
+Route::get('/', [BulkImportController::class, 'home'])->name('dashboard');
+Route::get('admin', [BulkImportController::class, 'dashboard'])->name('dashboard');
+Route::post('city-bulk-import', [BulkImportController::class, 'bulkImport'])->name('city.bulk.import');
+Route::get('city-index', [BulkImportController::class, 'cityIndex'])->name('city.index');
+Route::get('city/details/{id}', [BulkImportController::class, 'cityDetails'])->name('city.details');
+Route::get('city', [BulkImportController::class, 'city'])->name('city');
+

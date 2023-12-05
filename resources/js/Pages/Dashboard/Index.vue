@@ -1,409 +1,214 @@
 <template>
-    <div class="body_wraper p-md-5 p-3">
-        <div class="d-flex justify-content-between mb-4">
+    <div
+        style="overflow-x: hidden"
+        class="bulk_import body_wraper p-md-5 p-3"
+    >
+        <div class="mb-4">
+            <!-- page title start -->
             <div>
-                <h1 class="page-header-title">Dashboard</h1>
-                <div>Welcome message.</div>
+                <h1 class="page-header-title">
+                    <img src="" alt/>
+                    Bulk Import
+                </h1>
             </div>
-
-            <div>
-                <a
-                    class="btn btn--primary diamond_product"
-                    href="https://backend.bppshop.com.bd/seller/product/list">
-                    <i class="fa-solid fa-diamond"></i> Products
-                </a>
-            </div>
+            <!-- page title end -->
         </div>
 
-        <div class="cm_box mb-5">
-            <h1 class="box_title">
-                <img
-                    src="https://backend.bppshop.com.bd/assets/back-end/img/business_analytics.png"
-                    alt />
-                Business analytics
-            </h1>
-
-            <div class="row row-cols-2 row-cols-md-4 gy-3">
-                <div class="px-2">
-                    <div class="sm_card d-flex justify-content-between">
-                        <p>
-                            <img
-                                src="https://backend.bppshop.com.bd/assets/back-end/img/pending.png"
-                                alt />
-                            Pending
-                        </p>
-                        <span class="order_stats__title">0</span>
-                    </div>
-                </div>
-                <div class="px-2">
-                    <div class="sm_card d-flex justify-content-between">
-                        <p>
-                            <img
-                                src="https://backend.bppshop.com.bd/assets/back-end/img/pending.png"
-                                alt />
-                            Pending
-                        </p>
-                        <span class="order_stats__title">0</span>
-                    </div>
-                </div>
-                <div class="px-2">
-                    <div class="sm_card d-flex justify-content-between">
-                        <p>
-                            <img
-                                src="https://backend.bppshop.com.bd/assets/back-end/img/pending.png"
-                                alt />
-                            Pending
-                        </p>
-                        <span class="order_stats__title">0</span>
-                    </div>
-                </div>
-                <div class="px-2">
-                    <div class="sm_card d-flex justify-content-between">
-                        <p>
-                            <img
-                                src="https://backend.bppshop.com.bd/assets/back-end/img/pending.png"
-                                alt />
-                            Pending
-                        </p>
-                        <span class="order_stats__title">0</span>
-                    </div>
-                </div>
-                <div class="px-2">
-                    <div class="sm_card d-flex justify-content-between">
-                        <p>
-                            <img
-                                src="https://backend.bppshop.com.bd/assets/back-end/img/pending.png"
-                                alt />
-                            Pending
-                        </p>
-                        <span class="order_stats__title">0</span>
-                    </div>
-                </div>
-                <div class="px-2">
-                    <div class="sm_card d-flex justify-content-between">
-                        <p>
-                            <img
-                                src="https://backend.bppshop.com.bd/assets/back-end/img/pending.png"
-                                alt />
-                            Pending
-                        </p>
-                        <span class="order_stats__title">0</span>
-                    </div>
-                </div>
-                <div class="px-2">
-                    <div class="sm_card d-flex justify-content-between">
-                        <p>
-                            <img
-                                src="https://backend.bppshop.com.bd/assets/back-end/img/pending.png"
-                                alt />
-                            Pending
-                        </p>
-                        <span class="order_stats__title">0</span>
-                    </div>
-                </div>
-                <div class="px-2">
-                    <div class="sm_card d-flex justify-content-between">
-                        <p>
-                            <img
-                                src="https://backend.bppshop.com.bd/assets/back-end/img/pending.png"
-                                alt />
-                            Pending
-                        </p>
-                        <span class="order_stats__title">0</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="cm_box mb-5">
-            <h1 class="box_title">
-                <img
-                    src="https://backend.bppshop.com.bd/assets/back-end/img/admin-wallet.png"
-                    alt />
-
-                Seller Wallet
-            </h1>
-            <div class="row row-cols-lg-3">
-                <div class="px-2">
-                    <div
-                        class="sm_card gap-0 wallet_money d-flex align-items-center flex-column justify-content-center">
-                        <img
-                            class
-                            src="https://backend.bppshop.com.bd/assets/back-end/img/withdraw.png"
-                            alt />
-                        <h1>৳ 2,545,885.00</h1>
-                        <p class="mb-5">Withdrawable balance</p>
-                        <button class="btn btn-lg py-3 px-4 btn-primary">
-                            Withdraw
-                        </button>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-12 col-lg-8">
-                    <div class="row row-cols-2 gy-3">
-                        <div class="px-2">
-                            <div class="sm_card d-flex justify-content-between">
-                                <p>
-                                    <img
-                                        src="https://backend.bppshop.com.bd/assets/back-end/img/pending.png"
-                                        alt />
-                                    Pending
-                                </p>
-                                <span class="order_stats__title">0</span>
-                            </div>
-                        </div>
-                        <div class="px-2">
-                            <div class="sm_card d-flex justify-content-between">
-                                <p>
-                                    <img
-                                        src="https://backend.bppshop.com.bd/assets/back-end/img/pending.png"
-                                        alt />
-                                    Pending
-                                </p>
-                                <span class="order_stats__title">0</span>
-                            </div>
-                        </div>
-                        <div class="px-2">
-                            <div class="sm_card d-flex justify-content-between">
-                                <p>
-                                    <img
-                                        src="https://backend.bppshop.com.bd/assets/back-end/img/pending.png"
-                                        alt />
-                                    Pending
-                                </p>
-                                <span class="order_stats__title">0</span>
-                            </div>
-                        </div>
-                        <div class="px-2">
-                            <div class="sm_card d-flex justify-content-between">
-                                <p>
-                                    <img
-                                        src="https://backend.bppshop.com.bd/assets/back-end/img/pending.png"
-                                        alt />
-                                    Pending
-                                </p>
-                                <span class="order_stats__title">0</span>
-                            </div>
-                        </div>
-                        <div class="px-2">
-                            <div class="sm_card d-flex justify-content-between">
-                                <p>
-                                    <img
-                                        src="https://backend.bppshop.com.bd/assets/back-end/img/pending.png"
-                                        alt />
-                                    Pending
-                                </p>
-                                <span class="order_stats__title">0</span>
-                            </div>
-                        </div>
-                        <div class="px-2">
-                            <div class="sm_card d-flex justify-content-between">
-                                <p>
-                                    <img
-                                        src="https://backend.bppshop.com.bd/assets/back-end/img/pending.png"
-                                        alt />
-                                    Pending
-                                </p>
-                                <span class="order_stats__title">0</span>
-                            </div>
-                        </div>
-                        <div class="px-2">
-                            <div class="sm_card d-flex justify-content-between">
-                                <p>
-                                    <img
-                                        src="https://backend.bppshop.com.bd/assets/back-end/img/pending.png"
-                                        alt />
-                                    Pending
-                                </p>
-                                <span class="order_stats__title">0</span>
-                            </div>
-                        </div>
-                        <div class="px-2">
-                            <div class="sm_card d-flex justify-content-between">
-                                <p>
-                                    <img
-                                        src="https://backend.bppshop.com.bd/assets/back-end/img/pending.png"
-                                        alt />
-                                    Pending
-                                </p>
-                                <span class="order_stats__title">0</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="cm_box mb-5 p-0">
+            <div class="p-5">
+                <h1 class="instruction_heading">Instructions :</h1>
+                <ul class="instruction_list">
+                    <li>
+                        1. Download the format file and fill it with proper data.
+                    </li>
+                    <li>
+                        2. You can download the example file to understand how the
+                        data must be filled.
+                    </li>
+                    <li>
+                        3. Once you have downloaded and filled the format file upload
+                        it in the form below and submit.
+                    </li>
+                    <li>
+                        4. After uploading products you need to edit them and set
+                        products images and choices.
+                    </li>
+                    <li>
+                        5. You can get brand and category id from their list please
+                        input the right ids.
+                    </li>
+                    <li>
+                        6. You can upload your product images in product folder from
+                        gallery and copy image`s path.
+                    </li>
+                </ul>
             </div>
         </div>
 
-        <div
-            style="height: 300px"
-            class="cm_box d-flex align-items-center justify-content-center mb-5">
-            <h1>Graph should be here</h1>
-        </div>
-
-        <!-- products section  -->
-        <section>
-            <div class="row row-cols-1 row-cols-md-2">
-                <div class="px-2">
-                    <div class="cm_box p-0">
-                        <div
-                            style="
-                      box-shadow: 0 5px rgba(51, 66, 87, 0.05);
-                      padding: 30px;
-                    "
-                            class="pb-3 mb-1">
-                            <h1 class="box_title">
+        <div class="file_upload cm_box mb-5 p-0">
+            <div class="p-5">
+                <h4>
+                    Import Products File
+                    <a
+                        href=""
+                        class="btn-link text-capitalize fz-16 font-weight-medium"
+                        style="color: #24bac3; text-decoration: none"
+                    >Download Format</a
+                    >
+                </h4>
+                <div>
+                    <form @submit.prevent=submit>
+                        <div class="file_upload_input">
+                            <input
+                                type="file"
+                                @input="pickFile($event.target.files[0])"
+                                id="upload_input_file"
+                                style="display: none"
+                            />
+                            <label for="upload_input_file" class="d-flex justify-center">
                                 <img
-                                    src="https://backend.bppshop.com.bd/assets/back-end/img/admin-wallet.png"
-                                    alt />
-                                Top selling products
-                            </h1>
-                        </div>
-                        <div class="top_selling_product">
-                            <div class="product mb-5">
-                                <div class="product_img_w_title">
-                                    <img
-                                        src="https://backend.bppshop.com.bd/storage/product/thumbnail/2023-06-06-647ee749a7fd2.png"
-                                        alt />
-                                    <span>Himsagar Mango </span>
-                                </div>
-                                <button>Sold : <span>10</span></button>
-                            </div>
-                            <div class="product mb-5">
-                                <div class="product_img_w_title">
-                                    <img
-                                        src="https://backend.bppshop.com.bd/storage/product/thumbnail/2023-06-06-647ee749a7fd2.png"
-                                        alt />
-                                    <span>Himsagar Mango </span>
-                                </div>
-                                <button>Sold : <span>10</span></button>
-                            </div>
-                            <div class="product mb-5">
-                                <div class="product_img_w_title">
-                                    <img
-                                        src="https://backend.bppshop.com.bd/storage/product/thumbnail/2023-06-06-647ee749a7fd2.png"
-                                        alt />
-                                    <span>Himsagar Mango </span>
-                                </div>
-                                <button>Sold : <span>10</span></button>
-                            </div>
-                            <div class="product mb-5">
-                                <div class="product_img_w_title">
-                                    <img
-                                        src="https://backend.bppshop.com.bd/storage/product/thumbnail/2023-06-06-647ee749a7fd2.png"
-                                        alt />
-                                    <span>Himsagar Mango </span>
-                                </div>
-                                <button>Sold : <span>10</span></button>
-                            </div>
-                            <div class="product mb-5">
-                                <div class="product_img_w_title">
-                                    <img
-                                        src="https://backend.bppshop.com.bd/storage/product/thumbnail/2023-06-06-647ee749a7fd2.png"
-                                        alt />
-                                    <span>Himsagar Mango </span>
-                                </div>
-                                <button>Sold : <span>10</span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="px-2">
-                    <div class="cm_box h-100 p-0">
-                        <div
-                            style="
-                      box-shadow: 0 5px rgba(51, 66, 87, 0.05);
-                      padding: 30px;
-                    "
-                            class="pb-3 mb-1">
-                            <h1 class="box_title">
+                                    src="https://backend.bppshop.com.bd/assets/back-end/img/drag-upload-file.png"
+                                    alt=""
+                                    style="cursor: pointer; width:100%"
+                                    width="100%"
+                                    class="cursor-pointer"
+                                    id="not_file"
+
+                                />
                                 <img
-                                    src="https://backend.bppshop.com.bd/assets/back-end/img/most-popular-product.png"
-                                    alt />
-                                Most popular products
-                            </h1>
+                                    src=""
+                                    alt=""
+                                    style="
+                        cursor: pointer;
+                        display: none;
+                        padding: 20px 30px;
+                        margin: auto;
+                        max-width: 200px;
+                        width:100%;
+                      "
+                                    class=""
+                                    id="has_file"
+                                />
+                            </label>
                         </div>
                         <div
-                            class="most_popular_product row row-cols-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
-                            <div class="px-2">
-                                <div class="product mb-5 cm_box p-4">
-                                    <div class="product_img_w_title">
-                                        <img
-                                            src="https://backend.bppshop.com.bd/storage/product/thumbnail/2023-06-06-647ee749a7fd2.png"
-                                            alt />
-                                        <span class="title">Himsagar Mango </span>
-                                        <p>
-                                            <small>
-                                                <i class="fa-solid fa-star"></i>
-                                                <span class="review_title">(2 Reviews)</span>
-                                            </small>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="px-2">
-                                <div class="product mb-5 cm_box p-4">
-                                    <div class="product_img_w_title">
-                                        <img
-                                            src="https://backend.bppshop.com.bd/storage/product/thumbnail/2023-06-06-647ee749a7fd2.png"
-                                            alt />
-                                        <span class="title">Himsagar Mango </span>
-                                        <p>
-                                            <small>
-                                                <i class="fa-solid fa-star"></i>
-                                                <span class="review_title">(2 Reviews)</span>
-                                            </small>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="px-2">
-                                <div class="product mb-5 cm_box p-4">
-                                    <div class="product_img_w_title">
-                                        <img
-                                            src="https://backend.bppshop.com.bd/storage/product/thumbnail/2023-06-06-647ee749a7fd2.png"
-                                            alt />
-                                        <span class="title">Himsagar Mango </span>
-                                        <p>
-                                            <small>
-                                                <i class="fa-solid fa-star"></i>
-                                                <span class="review_title">(2 Reviews)</span>
-                                            </small>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="px-2">
-                                <div class="product mb-5 cm_box p-4">
-                                    <div class="product_img_w_title">
-                                        <img
-                                            src="https://backend.bppshop.com.bd/storage/product/thumbnail/2023-06-06-647ee749a7fd2.png"
-                                            alt />
-                                        <span class="title">Himsagar Mango </span>
-                                        <p>
-                                            <small>
-                                                <i class="fa-solid fa-star"></i>
-                                                <span class="review_title">(2 Reviews)</span>
-                                            </small>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            class="d-flex flex-wrap gap-10 align-items-center justify-content-end"
+                        >
+                            <button
+                                type="reset"
+                                id="reset"
+                                class="btn_reset btn btn-secondary px-4"
+                            >
+                                Reset
+                            </button>
+                            <button
+                                type="submit" :disabled="form.processing"
+                                class="btn_submit btn btn--primary px-4 ms-2"
+                            >
+                                Submit
+                            </button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
 </template>
 
 <script>
-import WebpageLayout from "../Layouts/WebpageLayout.vue";
+import webpageLayout from "../Layouts/WebpageLayout.vue";
+import {useForm} from "@inertiajs/vue3";
 
 export default {
-    name: "Index",
-    layout: WebpageLayout
+    name: "BulkImport",
+    layout: webpageLayout,
+    data() {
+        return {
+            form: useForm({
+                file: ''
+            })
+        }
+    },
+    methods: {
+        submit() {
+            this.form.post(route('city.bulk.import', this.form))
+        },
+        pickFile(files) {
+            this.form.file = files
+            this.filePreview()
+        },
+        filePreview() {
+            const upload_input_file = document.getElementById("upload_input_file");
+            const not_file = document.getElementById("not_file");
+            const has_file = document.getElementById("has_file");
+            const file = upload_input_file.files[0];
+            if (file?.name) {
+                not_file.style.display = "none";
+                has_file.style.display = "block";
+            } else {
+                not_file.style.display = "block";
+                has_file.style.display = "none";
+            }
+        }
+    },
 }
 </script>
-
 <style scoped>
+.bulk_import .instruction_heading {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.bulk_import .instruction_list {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-gap: 16px;
+  margin-top: 10px;
+}
+.bulk_import .btn_reset {
+  background-color: #f4f5f7;
+  border-color: #f4f5f7;
+  color: #334257;
+  font-size: 14px;
+  padding: 8px 24px;
+}
+.bulk_import .btn_reset:hover {
+  background-color: #ededed;
+  border-color: #ededed;
+}
+.bulk_import .btn_submit {
+  background-color: #0177cd;
+  color: white;
+  font-size: 14px;
+  padding: 8px 24px;
+}
+.bulk_import .btn_submit:hover {
+  background-color: #0177cd;
+  border-color: #0177cd;
+  color: white;
+}
+.bulk_import .file_upload h4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+}
+.bulk_import .file_upload_input {
+  max-width: 682px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.bulk_import .file_upload_input label {
+  height: 150px;
+  width: 100%;
+}
 
+@media screen and (max-width: 800px) {
+  .bulk_import .file_upload_input label {
+    width: 100%;
+    height: 100px;
+  }
+}/*# sourceMappingURL=bulkimport.css.map */
 </style>
